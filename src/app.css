@@ -1,0 +1,164 @@
+body {
+  background-color: #F3F7FA;
+}
+.filter {
+  padding: 20px 0;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 10px;
+  margin: 20px;
+  font-family: Arial;
+  
+}
+.filter ul {
+  padding-left: 0;
+}
+.filter li {
+  list-style: none;
+  position: relative;
+  padding: 5px 0 5px 20px;
+}
+
+.radio-button {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #222;
+  border-radius: 4px;
+  margin-right: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.radio-button_active {
+  border-color: #4BA2E9;
+}
+.radio-button_active:before {
+  content: '';
+  height: 7px;
+  width: 15px;
+  position: absolute;
+  left: 23px;
+  top: 9px;
+  border: 1px solid #4BA2E9;
+  border-right: none;
+  border-top: none;
+  transform: rotate(-45deg);
+}
+.filter b {
+  text-transform: uppercase;
+  padding: 0 20px;
+}
+.filter-wrapper {
+  width: 150px;
+  display: inline-block;
+}
+.filter-wrapper span{
+  display: inline-block;
+  padding-top: 3px;
+  vertical-align: top;
+}
+.only {
+  display: inline-block;
+  cursor: pointer;
+  visibility: hidden;
+  margin-left: auto;
+  vertical-align: top;
+  padding-top: 4px;
+}
+.only:hover {
+  color: #4BA2E9;
+}
+li:hover {
+  background-color: #F1FCFF;
+}
+li:hover > .only{
+  visibility: visible;
+}
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+.tickets {
+  display: flex;
+  flex-direction: column;
+}
+.ticket {
+  display: flex;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-family: Arial;
+}
+.company-price {
+  display: flex;
+  flex-direction: column;
+}
+.times {
+  display: flex;
+  padding: 20px;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.company-logo {
+  max-width: 170px;
+  max-height: 40px;
+}
+.company-logo img {
+  display: block;
+  margin: auto;
+  max-width: 100px;
+  max-height: 40px;
+}
+.company-price {
+  padding: 20px;
+  border-right: 1px solid #ccc;
+}
+.buy-button {
+  margin-top: 15px;
+  padding: 10px 35px;
+  background-color: #FF6D00;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+.buy-button span{
+   display: block; 
+}
+.time {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.place {
+  font-weight: bold;
+  font-size: 14px;
+}
+.date {
+  font-size: 14px;
+  color: #bbb;
+}
+.transfer {
+  border-bottom: 1px solid #bbb;
+  padding: 7px 18px 5px 18px;
+  width: 100px;
+  margin: 0 15px 0 0;
+  color: #bbb;
+  position: relative;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.transfer:after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url(/img/airplane.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  top: 16px;
+  left: 117px;
+}
+.arrival {
+  text-align: right;
+}
